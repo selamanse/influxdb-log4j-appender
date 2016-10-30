@@ -8,7 +8,7 @@ As there was a lack of an proper Implementation of an InfluxDB Appender I tried 
 
 ## InfluxDb support
 
-This Appender uses the [influx-java 2.0 driver](https://github.com/influxdb/influxdb-java), supporting only Versions >0.9 of InfluxDb
+This Appender uses the [influx-java 2.4 driver](https://github.com/influxdb/influxdb-java), supporting only Versions >0.9 of InfluxDb
 
 ## Usage with log4j.properties
 
@@ -26,7 +26,7 @@ log4j.appender.INFLUXDB=info.scheinfrei.log4j.InfluxDbAppender
 #log4j.appender.INFLUXDB.databaseName = "Logging"
 #log4j.appender.INFLUXDB.measurement = "log_entries"
 #log4j.appender.INFLUXDB.appName = "default"
-#log4j.appender.INFLUXDB.retentionPolicy = "default"
+#log4j.appender.INFLUXDB.retentionPolicy = "autogen"
 #log4j.appender.INFLUXDB.consistencyLevelWrite = "ONE"
 ```
 
@@ -48,7 +48,7 @@ How to add this appender to log4j.xml:
     <!--<param name="databaseName" value="Logging"/>-->
     <!--<param name="measurement" value="log_entries"/>-->
     <!--<param name="appName" value="default"/>-->
-    <!--<param name="retentionPolicy" value="default"/>-->
+    <!--<param name="retentionPolicy" value="autogen"/>-->
     <!--<param name="consistencyLevelWrite" value="ONE"/>-->
   </appender> 
 

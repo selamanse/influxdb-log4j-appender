@@ -34,7 +34,7 @@ public class InfluxDbAppender extends AppenderSkeleton
     private String databaseName = "Logging";
 	private String measurement = "log_entries";
 	private String appName = "default";
-    private String retentionPolicy = "default";
+    private String retentionPolicy = "autogen";
     private ConsistencyLevel consistencyLevelWrite = ConsistencyLevel.ONE;
 
     // series tag and field names
