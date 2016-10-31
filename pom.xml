@@ -18,7 +18,7 @@
   <groupId>info.scheinfrei.log4j</groupId>
   <artifactId>influxdb-log4j-appender</artifactId>
   <packaging>jar</packaging>
-  <version>0.9.4</version>
+  <version>1.0.0</version>
   <name>influxdb-log4j-appender</name>
   <url>https://github.com/selamanse/influxdb-log4j-appender</url>
 
