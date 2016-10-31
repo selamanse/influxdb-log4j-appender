@@ -22,8 +22,8 @@ public class BasicTest
 		Logger pkgLogger = rootLogger.getLoggerRepository().getLogger("info.scheinfrei.log4j");
 		pkgLogger.setLevel(Level.INFO);
 		InfluxDbAppender influxApp = new InfluxDbAppender();
-		influxApp.setHost("192.168.99.100");
-		influxApp.setPort(32768);
+		influxApp.setHost("127.0.0.1");
+		influxApp.setPort(8086);
 		influxApp.setAppName("unittest");
 		influxApp.activateOptions();
 		influxApp.setConsistencyLevelWrite("QUORUM");
