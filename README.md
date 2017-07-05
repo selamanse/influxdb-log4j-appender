@@ -1,9 +1,11 @@
 # influxdb-log4j-appender
+[![Build Status](https://travis-ci.org/selamanse/influxdb-log4j-appender.svg?branch=master)](https://travis-ci.org/selamanse/influxdb-log4j-appender)
+
 InfluxDb Appenders for Log4j
 
 ## Motivation
 
-Log4j is widely used as logging tool. 
+Log4j is widely used as logging tool.
 As there was a lack of an proper Implementation of an InfluxDB Appender I tried my best here.
 
 ## InfluxDb support
@@ -39,7 +41,7 @@ How to add this appender to log4j.xml:
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
-  <appender name="INFLUXDB" class="info.scheinfrei.log4j.InfluxDbAppender"> 
+  <appender name="INFLUXDB" class="info.scheinfrei.log4j.InfluxDbAppender">
     <!-- Optional settings. The current values are the default ones -->
     <!--<param name="host" value="localhost"/>-->
     <!--<param name="port" value="8086"/>-->
@@ -50,13 +52,13 @@ How to add this appender to log4j.xml:
     <!--<param name="appName" value="default"/>-->
     <!--<param name="retentionPolicy" value="autogen"/>-->
     <!--<param name="consistencyLevelWrite" value="ONE"/>-->
-  </appender> 
+  </appender>
 
-  <root> 
-    <priority value ="info" /> 
-    <appender-ref ref="INFLUXDB" /> 
+  <root>
+    <priority value ="info" />
+    <appender-ref ref="INFLUXDB" />
   </root>
-  
+
 </log4j:configuration>
 ```
 
@@ -68,7 +70,7 @@ How to add this appender to log4j.xml:
 
  * BatchPoint mode support
  * layout support
- 
+
 ## License
- 
+
   Licensed under the Apache License, Version 2.0 (the "License");
