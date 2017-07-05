@@ -1,0 +1,13 @@
+sudo: required
+
+language: java
+
+cache:
+  directories:
+
+services:
+  - docker
+
+before_install:
+  - docker pull
+  - docker run -p 8086:8086 influxdb:1.2
