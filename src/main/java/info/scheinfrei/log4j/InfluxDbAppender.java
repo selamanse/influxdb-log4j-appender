@@ -176,7 +176,7 @@ public class InfluxDbAppender extends AppenderSkeleton
 		return databaseName;
 	}
 
-	public void setDatabase(String databaseName)
+	public void setDatabaseName(String databaseName)
     {
 		this.databaseName = databaseName;
 	}
